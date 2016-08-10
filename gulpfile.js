@@ -10,7 +10,7 @@ var sassPaths = [
 
 gulp.task('sass', function() {
   //output unminified css and map
-  gulp.src('scss/app.scss')
+  gulp.src('resources/scss/app.scss')
     .pipe($.rename('uthsc.scss'))
     .pipe($.sourcemaps.init())
       .pipe($.sass({
@@ -25,7 +25,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./-resources/2015/css'));
 
   //output minified sylesheet
-  gulp.src('scss/app.scss')
+  gulp.src('resources/scss/app.scss')
     .pipe($.sass({
       outputStyle: 'compressed',
       includePaths: sassPaths
@@ -43,7 +43,7 @@ gulp.task('copy-fonts', function() {
 });
 
 gulp.task('copy-images', function() {
-    gulp.src('./images/**/*')
+    gulp.src('resources/images/**/*')
         .pipe(gulp.dest('./-resources/2015/images'));
 });
 
@@ -76,7 +76,7 @@ gulp.task('uthsc-news-ajax', function() {
 
 gulp.task('uthsc-search-detail', function() {
 	return gulp.src ([
-		'./js/partials/uthsc-search-detail.js'
+		'resources/js/partials/uthsc-search-detail.js'
 	])
 		.pipe($.uglify())
 		.pipe($.rename('uthsc-search-detail.min.js'))
@@ -85,11 +85,11 @@ gulp.task('uthsc-search-detail', function() {
 
 gulp.task('uthsc-js', function() {
   return gulp.src ([
-      './js/app.js',
+      'resources/js/app.js',
       './bower_components/emerald/js/partials/uthsc.off-canvas.js',
       './bower_components/emerald/js/partials/uthsc.safari-bottom-nav-fix.js',
-      './js/partials/uthsc.section-nav.js',
-      './js/partials/uthsc-navigation-highlight.js'
+      'resources/js/partials/uthsc.section-nav.js',
+      'resources/js/partials/uthsc-navigation-highlight.js'
       ])
           .pipe($.concat('uthsc.js'))
           .pipe(gulp.dest('./-resources/2015/js'))
