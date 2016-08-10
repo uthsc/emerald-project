@@ -1,0 +1,110 @@
+@mixin uthsc-homepage {
+  .row.uthsc-row-space {
+    margin-top: 2rem;
+  }
+  .homepage {
+    .hero {
+      margin-top: 1rem;
+    }
+
+    .toggle-push-right {
+      background-image: url("../images/full-width-menu-button.png");
+      background-repeat: no-repeat;
+    }
+    .fullscreen {
+      height: calc(90vh - 105px);
+      background-image: linear-gradient(
+                      rgba(0, 0, 0, 0.65),
+                      rgba(0, 0, 0, 0.45)
+      ), url("../images/fullscreen-students.jpg");
+      background-size: cover;
+      background-position-x: 100%;
+      background-position-y: 80%;
+      background-repeat: no-repeat;
+
+      @include uthsc-vertical-center;
+
+      .uthsc-fullscreen-content {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+
+        p {
+          line-height: 1.2;
+        }
+
+        @include breakpoint(large) {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .uthsc-people-search {
+      .input-group-field {
+        border-radius: 0;
+        /* height: 3.5rem; */
+        font-size: 1.2rem;
+        padding: 2rem;
+        font-style: italic;
+      }
+      .input-group-button a, .input-group-button input, .input-group-button button {
+        padding: 1.45rem 03rem;
+        font-size: 1.1rem;
+      }
+    }
+
+    .uthsc-infographics h2 {
+      font-weight: bolder;
+      font-size: 4rem;
+      font-family: inherit;
+      line-height: 5rem;
+      margin-bottom: 0;
+      letter-spacing: -2px;
+      color: #ced0b4;
+      margin: 0;
+    }
+    .uthsc-infographics p {
+      font-size: 0.75rem;
+      font-weight: lighter;
+    }
+    .uthsc-infographics p:first-of-type {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    .uthsc-infographics .uthsc-infographic-highlight {
+      font-weight: bold;
+      color: #b06010;
+      letter-spacing: 6px;
+      font-size: 1rem;
+      font-variant-ligatures: no-common-ligatures;
+    }
+
+
+    .uthsc-infographic {
+      background-size: contain !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      margin: 1.5rem 0px !important;
+      padding: 0.5rem;
+      &.tennessee {
+        background: url("../images/uthsc-tennessee-gray.png");
+        &:hover {
+          background: url("../images/uthsc-tennessee-color.png");
+        }
+      }
+      &.pharmacy {
+        background: url("../images/numbers-pharmacy-seal.png");
+      }
+      &.foam-hand {
+        background: url("../images/numbers-foam-hand.png");
+      }
+      &.billions {
+        background: url("../images/numbers-billion-b.png");
+      }
+      &.millions {
+        background: url("../images/numbers-million-m.png");
+      }
+    }
+  }
+}

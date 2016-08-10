@@ -1,0 +1,78 @@
+//import emerald
+@import 'emerald';
+
+//import project components
+@import 'partials/uthsc-homepage';
+@import 'partials/uthsc-program-explorer.scss';
+@import 'partials/uthsc-content-footer';
+@import 'partials/uthsc-hero.scss';
+@import 'partials/uthsc-now.scss';
+@import 'partials/uthsc-backgrounds.scss';
+@import 'partials/uthsc-snippet-style-fixes.scss';
+
+//include foundation components
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+//@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+//@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+//@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+//@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+//include emerald components
+@include uthsc-global;
+@include uthsc-site-nav;
+@include uthsc-anchortext;
+@include uthsc-banner;
+@include uthsc-hero-dev;
+@include uthsc-off-canvas;
+@include uthsc-global-footer;
+@include uthsc-safari-bottom-nav-fix;
+@include uthsc-breadcrumbs;
+@include uthsc-section-nav;
+@include uthsc-news-box;
+@include uthsc-page-opening;
+@include uthsc-highlight-box;
+@include uthsc-events;
+@include uthsc-badge-box;
+@include uthsc-background-stripe;
+@include uthsc-accordion;
+@include uthsc-list-styles;
+
+//include project components
+@include uthsc-homepage;
+@include uthsc-program-explorer;
+@include uthsc-content-footer;
+@include uthsc-now;
+@include uthsc-backgrounds;
+@include uthsc-snippet-half-columns;
