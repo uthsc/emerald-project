@@ -99,14 +99,9 @@ gulp.task('uthsc-js', function() {
 });
 
 gulp.task('buildjs',
-	[ 'uthsc-now-js',
-		'uthsc-now-homepage-js',
-		'uthsc-js',
+	[ 'uthsc-js',
 		'copy-vendor-js',
 		'uthsc-emergency-notification',
-		'uthsc-search',
-		'uthsc-news-ajax',
-		'uthsc-search-detail'
 	]
 );
 
